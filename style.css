@@ -1,0 +1,143 @@
+/* Basic styles for the KHL mini‑app */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    background-color: #0066cc;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+.suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    width: calc(100% - 2px);
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.suggestions li {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.suggestions li:hover {
+    background-color: #f0f0f0;
+}
+
+.result {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.result table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+
+/* Styles for player header */
+.player-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.player-photo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+}
+
+.player-info h2 {
+    margin: 0 0 0.25rem 0;
+}
+
+.result th, .result td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.result th {
+    background-color: #f9f9f9;
+}
