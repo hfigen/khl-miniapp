@@ -28,9 +28,8 @@ from .parser import PlayerStats, get_player_stats, get_players, search_players
 LOGGER = logging.getLogger(__name__)
 
 # Create Flask app
-app = Flask(__name__, template_folder=os.path.join(os.path.dirname(__file__), 'templates'),
-            static_folder=os.path.join(os.path.dirname(__file__), 'static'))
-
+BASE_DIR = os.path.dirname(__file__)
+app = Flask(__name__, template_folder=BASE_DIR, static_folder=BASE_DIR)
 
 @app.route('/')
 def index() -> str:
